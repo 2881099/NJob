@@ -2,7 +2,7 @@
 
 # 使用方法
 
-> Install-Package NJob -Version 1.0.0
+> Install-Package NJob -Version 1.0.1
 
 ```csharp
 //假设运行在控制台

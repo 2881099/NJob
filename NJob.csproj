@@ -4,11 +4,11 @@
     <AssemblyName>NJob</AssemblyName>
     <PackageId>NJob</PackageId>
     <RootNamespace>NJob</RootNamespace>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageProjectUrl>https://github.com/2881099/NJob</PackageProjectUrl>
-    <Description>非常轻便的作业调度器，支持.NETCore</Description>
+    <Description>非常轻便的作业调度器，定时任务，支持.NETCore</Description>
     <RepositoryUrl>https://github.com/2881099/NJob</RepositoryUrl>
-    <PackageTags>调度器 schedule job 定时器 作业</PackageTags>
+    <PackageTags>调度 调度器 schedule job 定时 定时器 作业 定时任务</PackageTags>
   </PropertyGroup>
 </Project>
