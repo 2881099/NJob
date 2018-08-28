@@ -41,7 +41,9 @@ public class NJob : IDisposable {
 				if (bot._timer == null) bot.RunNow();
 		}
 		if (_defWatcher == null) {
-			_defWatcher = new FileSystemWatcher(Path.GetDirectoryName(_def_path), Path.GetFileName(_def_path));
+			var dirname = Path.GetDirectoryName(_def_path);
+			if (string.IsNullOrEmpty(dirname)) dirname = Directory.GetCurrentDirectory();
+			_defWatcher = new FileSystemWatcher(dirname, Path.GetFileName(_def_path));
 			_defWatcher.Changed += delegate(object sender, FileSystemEventArgs e) {
 				_defWatcher.EnableRaisingEvents = false;
 				if (_jobs.Count > 0) {
