@@ -2,11 +2,11 @@
 
 # 使用方法
 
-> Install-Package NJob -Version 1.0.1
+> Install-Package NJob
 
 ```csharp
 //假设运行在控制台
-NJob j = new NJob();
+var j = new NJob();
 
 j.Run += (a, b) => {
     string logObj = b.Name;
