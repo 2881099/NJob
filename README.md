@@ -4,6 +4,8 @@
 
 > Install-Package NJob
 
+推荐使用 [IdleScheulder 定时任务调度](https://github.com/2881099/IdleBus/tree/master/IdleScheduler)
+
 ```csharp
 //假设运行在控制台
 var j = new NJob();
